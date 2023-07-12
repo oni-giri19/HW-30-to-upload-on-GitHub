@@ -9,6 +9,16 @@ body {
   background-position: center;
   background-size: cover;
 }
+
+.title-message {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
 form {
   position: relative;
   height: 100vh;
@@ -46,6 +56,7 @@ input::placeholder {
   padding-left: 10px;
   font-size: 1.4rem;
   font-weight: bolder;
+  color: rgba(128, 0, 128, 0.856);
 }
 label {
   padding-left: 15px;
@@ -102,4 +113,41 @@ p {
   text-align: center;
   font-size: 13px;
   letter-spacing: normal;
+}
+
+@media only screen and (max-width: 600px) {
+  .title-message {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  input {
+    height: 40px;
+    width: 90px;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+
+  button {
+    top: 80px;
+    height: 50px;
+    width: 50px;
+    font-size: 1.8rem;
+  }
+
+  .bot-div div {
+    font-size: 2rem;
+  }
+
+  .bot-div span {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 11px;
+  }
 }
